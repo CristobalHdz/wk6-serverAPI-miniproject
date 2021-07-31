@@ -7,8 +7,8 @@
   <title>Results | Library of Congress Search</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/jass.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./jass.css" />
+    <link rel="stylesheet" href="./style (1).css" />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="col-12 col-md-3 bg-light p-3">
       <h1 class="text-primary">Library of Congress Search Engine</h1>
       <form id="search-form" class="mb-2">
-        <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+        <input id="search-input" class="form-input w-100" name="search-input" type="text" placeholder="Search!">
         <select id="format-input" class="form-input w-100">
           <option value="" disabled selected>Select a format...</option>
           <option value="maps">Maps</option>
@@ -29,10 +29,10 @@
           <option value="notated-music">Notated Music</option>
           <option value="websites">Websites</option>
         </select>
-        <button class="btn btn-info btn-block">Search</button>
+        <button class="btn btn-info btn-block" id="searchBtn">Search</button>
       </form>
 
-      <a href="./index.html" class="btn btn-block btn-danger">&larr; Go back.</a>
+      <a href="./index%20(1).html" class="btn btn-block btn-danger" id="backBtn">&larr; Go back.</a>
     </div>
 
     <div class="col-12 col-md-9 p-3 text-light">
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <script src="./assets/js/display-search.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
